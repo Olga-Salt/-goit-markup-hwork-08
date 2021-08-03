@@ -1,0 +1,15 @@
+@mixin centeredFlex($typi) {
+  display: $typi;
+  align-items: center;
+  justify-content: center;
+}
+
+$pictureList: "check" "company11" "group55";
+
+@mixin genereteIcons($iconList) {
+  @each $pictureIcon in $iconList {
+    .pgggg-#{$pictureIcon} {
+      background-image: url("../images/icons/#{$pictureIcon}.svg");
+    }
+  }
+}

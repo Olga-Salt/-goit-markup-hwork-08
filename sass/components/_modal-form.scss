@@ -1,0 +1,232 @@
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+
+  cursor: pointer;
+
+  background: var(--color-wight);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:hover .close-btn__img,
+  &:focus .close-btn__img {
+    fill: var(--brand-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.modal__title {
+  display: block;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--color-main);
+
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+}
+.modal__input {
+  width: 100%;
+  height: 40px;
+  margin: 0;
+
+  margin-bottom: 10px;
+  padding-left: 42px;
+  display: block;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+    border-color: var(--brand-color);
+  }
+}
+
+.modal__label {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--color-grey);
+}
+
+.modal__icon-box {
+  position: relative;
+}
+.modal__icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal__input:focus + & {
+    fill: var(--brand-color);
+  }
+}
+
+/* .modal__input:focus:not(:placeholder-shown):valid {
+  border-color: var(--brand-color);
+}
+.modal__input:focus:not(:placeholder-shown):invalid {
+  border-color: rgba(33, 33, 33, 0.2);
+} */
+
+/* .modal__input:focus:valid {
+  border-color: var(--brand-color);
+}
+.modal__input:focus:invalid {
+  border-color: rgba(33, 33, 33, 0.2);
+} */
+
+.modal__comment {
+  width: 100%;
+  height: 120px;
+
+  padding: 12px 16px;
+  margin-bottom: 20px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  resize: none;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  color: var(--color-grey);
+
+  // @media screen and (max-width: 391px) {
+  //   justify-content: center;
+  //   flex-wrap: wrap;
+  // }
+
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+.checkbox__input {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute; */
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal__link {
+  color: var(--brand-color);
+}
+
+.checkbox__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid var(--color-main);
+  border-radius: 2px;
+  margin-right: 7px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 13px;
+  }
+
+  cursor: pointer;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .checkbox__input:checked + & {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+
+    background-image: url(../images/icons/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .checkbox__input:focus + & {
+    border: 2px solid var(--brand-color);
+  }
+}
+
+.modal__btn-submit {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top: 30px;
+
+  background-color: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+
+  letter-spacing: 0.06em;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  color: var(--color-wight);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-bnt);
+  }
+}

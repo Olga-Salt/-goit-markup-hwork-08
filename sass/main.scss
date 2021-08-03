@@ -1,0 +1,37 @@
+// UTILS
+@import "./utils/variebles";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./utils/visually-hidden";
+
+// VENDORS
+@import "./vendors/normalize";
+
+// СБРОС СТИЛЕЙ
+@import "./base/common";
+
+// БАЗОВЫЕ СТИЛИ
+@import "./base/conteiner";
+
+// СТИЛИ КОМПОНЕНТОВ
+@import "./components/title";
+@import "./components/logo";
+@import "./components/modal-btn";
+@import "./components/social-list";
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/modal-form";
+
+// ОСНОВНЫЕ СТИЛИ
+@import "./layout/page-header";
+@import "./layout/navigation";
+@import "./layout/header-contacts";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/doing";
+@import "./layout/_team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/footer-form";
+@import "./layout/portfolio-filter";
+@import "./layout/portfolio-card";

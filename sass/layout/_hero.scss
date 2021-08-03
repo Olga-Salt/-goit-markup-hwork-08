@@ -1,0 +1,97 @@
+.section-hero {
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin: 0px auto;
+
+  max-width: 1600px;
+  background-size: cover;
+  background-color: #c4c4c4;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/mobile/bg-main.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 280px),
+    (min-resolution: 192dpi) and (min-width: 280px),
+    (min-resolution: 2dppx) and (min-width: 280px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/mobile/bg-main@2x.jpg");
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/tablet/bg-main.jpg");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/tablet/bg-main@2x.jpg");
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/deckstope/bg-main.jpg");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+    (min-resolution: 192dpi) and (min-width: 1200px),
+    (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/deckstope/bg-main@2x.jpg");
+  }
+}
+
+.section-hero__conteiner {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+  }
+}
+
+.section-hero__title {
+  font-weight: 900;
+  // font-size: 7vw;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-wight);
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}

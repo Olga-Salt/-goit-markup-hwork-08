@@ -1,0 +1,108 @@
+.footer__form {
+  width: 100%;
+  display: flex;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  // }
+}
+.footer__form-box {
+  height: 86px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    margin-left: auto;
+  }
+}
+
+.footer__label {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.footer__input {
+  width: 100%;
+  height: 50px;
+  // margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+
+  padding: 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: var(--bgc);
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+
+  transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: var(--brand-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  }
+}
+
+.footer__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+
+  width: 200px;
+  height: 50px;
+
+  padding: 10px 28px 10px 29px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+  color: var(--color-wight);
+
+  background-color: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-bnt);
+  }
+}
