@@ -12,7 +12,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/mobile/bg-main.jpg");
+    url("../images/mobile/bg-main.jpg");
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
     (-webkit-min-device-pixel-ratio: 2) and (min-width: 280px),
@@ -22,7 +22,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/mobile/bg-main@2x.jpg");
+      url("../images/mobile/bg-main@2x.jpg");
   }
 
   @media screen and (min-width: 768px) {
@@ -30,7 +30,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/tablet/bg-main.jpg");
+      url("../images/tablet/bg-main.jpg");
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -41,7 +41,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/tablet/bg-main@2x.jpg");
+      url("../images/tablet/bg-main@2x.jpg");
   }
 
   @media screen and (min-width: 1200px) {
@@ -52,7 +52,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/deckstope/bg-main.jpg");
+      url("../images/deckstope/bg-main.jpg");
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -63,7 +63,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/deckstope/bg-main@2x.jpg");
+      url("../images/deckstope/bg-main@2x.jpg");
   }
 }
 
