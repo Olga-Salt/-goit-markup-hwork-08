@@ -10,6 +10,46 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <!--для быстрой загрузки &display=swap  
+      и добавляем для кирилицы если русские буквы есть то надо &subset=cyrillic-ext и удаляем из строки лишнюю жирность-->
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext"
+      rel="stylesheet"
+    /> -->
+
+    <!-- карусель слик первый фаил -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- карусель слик второй фаил -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- подключение бутстрап -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- библиотека анимаций анимейт -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"
+    />
+
     <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -205,6 +245,8 @@
         </div>
       </section>
 
+      <!-- TODO jhfkbk-->
+      -->
       <!--=============== section our doing ===================-->
       <section class="section doing work">
         <div class="conteiner doing__conteiner">
@@ -279,15 +321,466 @@
                 <p class="thumb-card__overlay">Дизайнерские решения</p>
               </div>
             </li>
+
+            <li class="doing__item">
+              <div class="thumb-card">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/note.webp 1x, ./images/box1@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/note.jpg 1x, ./images/box1@2x.jpg 2x"
+                  />
+
+                  <img
+                    src="#"
+                    alt="человек верстает сайт на компьютере"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
+                <p class="thumb-card__overlay">Десктопные приложения</p>
+              </div>
+            </li>
+            <li class="doing__item">
+              <div class="thumb-card">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/box2.webp 1x, ./images/box2@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
+                  />
+                  <img
+                    src="#"
+                    alt="человек оптимизирует сайт для мобильных устройств"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
+                <p class="thumb-card__overlay">Мобильные приложения</p>
+              </div>
+            </li>
+            <li class="doing__item">
+              <div class="thumb-card">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/box3.webp 1x, ./images/box3@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
+                  />
+                  <img
+                    src="#"
+                    alt="человек выполняет цветокоррекцию на планшете"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+                <p class="thumb-card__overlay">Дизайнерские решения</p>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
 
       <!--========= section our team ==============-->
-      <section class="section team">
-        <div class="conteiner">
+      <section class="section team red">
+        <div class="conteiner red">
           <h2 class="section__title">Наша команда</h2>
           <ul class="list team__list">
+            <li class="team__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team1.webp    1x,
+                    ./images/deckstope/team1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team1.jpg    1x,
+                    ./images/deckstope/team1@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team1.webp    1x,
+                    ./images/tablet/team1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team1.jpg    1x,
+                    ./images/tablet/team1@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team1.webp    1x,
+                    ./images/mobile/team1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team1.jpg    1x,
+                    ./images/mobile/team1@2x.jpg 2x
+                  "
+                />
+                <img src="#" alt="Фото Игоря Демьяненко" />
+              </picture>
+
+              <div class="team__box">
+                <h3 class="team__members">Игорь Демьяненко</h3>
+                <p class="team__description">Product designer</p>
+                <ul class="list social-list">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team2.webp    1x,
+                    ./images/deckstope/team2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team2.jpg    1x,
+                    ./images/deckstope/team2@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team2.webp    1x,
+                    ./images/tablet/team2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team2.jpg    1x,
+                    ./images/tablet/team2@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team2.webp    1x,
+                    ./images/mobile/team2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team2.jpg    1x,
+                    ./images/mobile/team2@2x.jpg 2x
+                  "
+                />
+                <img src="#" alt="Фото Ольги Репиной" />
+              </picture>
+
+              <div class="team__box">
+                <h3 class="team__members">Ольга Репина</h3>
+                <p class="team__description">Frontend Developer</p>
+                <ul class="list social-list">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team3.webp    1x,
+                    ./images/deckstope/team3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team3.jpg    1x,
+                    ./images/deckstope/team3@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team3.webp    1x,
+                    ./images/tablet/team3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team3.jpg    1x,
+                    ./images/tablet/team3@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team3.webp    1x,
+                    ./images/mobile/team3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team3.jpg    1x,
+                    ./images/mobile/team3@2x.jpg 2x
+                  "
+                />
+                <img src="#" alt="Фото Николая Тарасова" />
+              </picture>
+
+              <div class="team__box">
+                <h3 class="team__members">Николай Тарасов</h3>
+                <p class="team__description">Marketing</p>
+                <ul class="list social-list">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team4.webp    1x,
+                    ./images/deckstope/team4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team4.jpg    1x,
+                    ./images/deckstope/team4@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team4.webp    1x,
+                    ./images/tablet/team4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team4.jpg    1x,
+                    ./images/tablet/team4@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team4.webp    1x,
+                    ./images/mobile/team4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team4.jpg    1x,
+                    ./images/mobile/team4@2x.jpg 2x
+                  "
+                />
+                <img src="#" alt="Фото Михаила Ермакова" />
+              </picture>
+
+              <div class="team__box">
+                <h3 class="team__members">Михаил Ермаков</h3>
+                <p class="team__description">UI Designer</p>
+                <ul class="list social-list">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon">
+                        <use
+                          href="./images/icons/sprite.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
             <li class="team__item">
               <picture>
                 <source
@@ -921,7 +1414,474 @@
       </form>
     </div>
 
+    <!-- аккордион -->
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Примеры наших работ
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is
+            shown by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Accordion Item #2
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Accordion Item #3
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- аккордион end -->
+
+    <!-- сетки -->
+    <div class="row">
+      <div
+        class="col-xs-12 col-sm-9 col-md-3 col-xl-6"
+        style="background-color: blue"
+      >
+        gg
+      </div>
+      <div
+        class="col-xs-12 col-sm-3 col-md-9 col-xl-6"
+        style="background-color: rgb(55, 55, 165)"
+      >
+        dedd
+      </div>
+    </div>
+
+    <!-- кнопки -->
+    <button type="button" class="btn btn-primary position-relative">
+      Inbox
+      <span
+        class="
+          position-absolute
+          top-0
+          start-100
+          translate-middle
+          badge
+          rounded-pill
+          bg-danger
+        "
+      >
+        99+
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button>
+
+    <button type="button" class="wow pulse btn btn-primary position-relative">
+      Profile
+      <span
+        class="
+          position-absolute
+          top-0
+          start-100
+          translate-middle
+          p-2
+          bg-danger
+          border border-light
+          rounded-circle
+        "
+      >
+        <span class="visually-hidden">New alerts</span>
+      </span>
+    </button>
+
+    <div class="row">
+      <div
+        class="
+          text-primary
+          wow
+          rubberBand
+          col-sm-8 col-md-6 col-lg-3
+          mb-4
+          d-flex d-md-flex d-sm-block
+          fs-3
+          justify-content-between
+          align-items-center
+        "
+      >
+        <h1>
+          Example heading
+          <span class="badge bg-secondary animate__animated animate__bounce"
+            >New</span
+          >
+        </h1>
+        <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+        <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+      </div>
+      <div class="col-sm-8 col-md-6 col-lg-3 mb-4">
+        <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+      </div>
+      <div class="col-sm-8 col-md-6 col-lg-3 mb-4">
+        <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+      </div>
+      <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+      <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+      <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+    </div>
+
+    <button type="button" class="btn bg-info text-dark rounded-pill">
+      Notifications <span class="badge bg-warning text-dark">4</span>
+    </button>
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" type="button">Button</button>
+      <button class="btn btn-primary" type="button">Button</button>
+    </div>
+
+    <div class="d-grid gap-2">
+      <button class="btn btn-primary" type="button">Button</button>
+      <button class="btn btn-primary" type="button">Button</button>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">
+              With supporting text below as a natural lead-in to additional
+              content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">
+              With supporting text below as a natural lead-in to additional
+              content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="true" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a short card.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- конец тренировки бутсрап -->
+
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+
+    <!-- тренировки бутсрап -->
+    <!-- карусель. сначала джиквери -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- потом js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- настройки скрипта карусели -->
+    <script>
+      $(".doing__list").slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        autoplay: true,
+        // autoplaySpeed: 1000,
+        // arrows: true,
+        // rows: 2,
+        // fade: true,
+        // dotsClass: "slick-dots",
+        // appendDots: $("slick-dots"),
+
+        dots: true,
+      });
+    </script>
+
+    <!-- втрой скрипт настройки на другой карусели -->
+    <script>
+      $(".team__list").slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 1000,
+      });
+    </script>
+
+    <!-- скрипт подключения бустрап js. в хеде тоже только css файл -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- библиотека анимаций при скроле wow js-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- настройка библиотеки при скроле совместима с анимейт библиотекой. т е подключается сначала анимейт а пото wow -->
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
