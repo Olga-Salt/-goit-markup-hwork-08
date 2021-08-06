@@ -46,22 +46,3 @@
   }
 }
 
-.slick-next:before,
-.slick-prev:before {
-  color: tomato;
-  // content: "";
-  // background-image: url(../../images/mobile/team1.jpg);
-  // width: 40px;
-  // height: 40px;
-  // display: block;
-  // background-size: cover;
-}
-.slick-dots li button:before {
-  content: "A";
-  font-size: 50px;
-}
-
-.slick-dots li.slick-active button:before {
-  content: "O";
-  font-size: 20px;
-}
