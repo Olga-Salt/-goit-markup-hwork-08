@@ -1128,6 +1128,21 @@ body {
   }
 }
 
+.slick-next:before,
+.slick-prev:before {
+  color: tomato;
+}
+
+.slick-dots li button:before {
+  content: "A";
+  font-size: 50px;
+}
+
+.slick-dots li.slick-active button:before {
+  content: "O";
+  font-size: 20px;
+}
+
 .team {
   background-color: var(--bgc-lighter);
 }
@@ -1657,5 +1672,34 @@ body {
 .card__item:hover .card__overlay,
 .card__link:focus .card__overlay {
   transform: translateY(0);
+}
+
+.accordion {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.conteiner {
+  font-style: 20px;
+}
+
+.doing__conteiner {
+  font-style: 20px;
+}
+
+.section__title {
+  font-style: 20px;
+}
+
+.list {
+  font-style: 20px;
+}
+
+.doing__list {
+  font-style: 20px;
+}
+
+.red {
+  background-color: #31c42c;
 }
 /*# sourceMappingURL=main.css.map */
